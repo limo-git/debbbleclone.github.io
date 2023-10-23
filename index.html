@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dribbble</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $(".toggle").on("click", function () {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const slider = document.getElementById("slider");
+            let position = 0;
+            const slideWidth = 200; 
+            const slideCount = slider.children.length;
+            const sliderWidth = slideWidth * slideCount;
+
+
+            slider.style.width = `${sliderWidth}px`;
+
+
+            setInterval(() => {
+                position -= 1;
+                slider.style.transform = `translateX(${position}px)`;
+
+                
+                if (position <= -sliderWidth + -slideWidth + -100 + document.documentElement.clientWidth) {
+                    position = 0;
+                }
+            }, 1);
+            const dropdownBtn = document.querySelector(".dropbtn");
+    const dropdownContent = document.querySelector(".dropdown-content");
+    
+    dropdownBtn.addEventListener("click", function() {
+      dropdownContent.classList.toggle("show-dd");
+        });
+});
+    </script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <button class="dropbtn">Menu</button>
+        <ul class="navbar-items">
+            <li class="items"><a>Find talent</a></li>
+            <li class="items"><a> Inspiration</a></li>
+            <li class="items"><a>Learn design</a></li>
+            <li class="items"><a>Jobs</a></li>
+            <li class="items"><a>Go Pro</a></li>
+
+        </ul>
+        <img class="logo" src="images/Dribbble-Logo-New.png" />
+        </div>
+        <div class="actions nav-actions">
+            <span class="action"><a href="register.html">Log in</a></span>
+            <span class="action"><a href="register.html">Sign up</a></span>
+        </div>
+    </nav>
+  <div class="dropdown">
+    <div class="dropdown-content">
+        <div class="dropdown-items">
+            <a href="#">Find talent</a>
+            <a href="#">Inspiration</a>
+            <a href="#">Learn design</a>
+            <a href="#">Jobs</a>
+            <a href="#">Go Pro</a>
+        </div>
+      <div class="actions">
+        <span class="action"><a href="register.html">Log in</a></span>
+        <span class="action"><a href="register.html">Sign up</a></span>
+      </div>
+    </div>
+  </div>
+
+
+    <section class="one">
+        <div class="homecontainer">
+            <div class="info">Over 3 million ready to work in our community! </div>
+            <div class="infotwo">
+                <h1>Hire the world's top
+                    <br> creative talent.
+                </h1>
+            </div>
+            <div class="infothree"> Connect with a community of millions of top-rated designers & agencies around the
+                world.</div>
+            <div class="hiringbutton"> Start hiring today</div>
+        </div>
+    </section>
+
+    </div>
+
+    <div class="slider" id="slider">
+        <div class="slide"> <img src="./images/img1.png"></div>
+        <div class="slide"> <img src="./images/img2.png"></div>
+        <div class="slide"> <img src="./images/img3.png"></div>
+        <div class="slide"> <img src="./images/img4.png"></div>
+        <div class="slide"> <img src="./images/img5.png"></div>
+        <div class="slide"> <img src="./images/img6.png"></div>
+        <div class="slide"> <img src="./images/img7.png"></div>
+        <div class="slide"> <img src="./images/img8.png"></div>
+        <div class="slide"> <img src="./images/img9.png"></div>
+        <div class="slide"> <img src="./images/img10.png"></div>
+        <div class="slide"> <img src="./images/img1.png"></div>
+        <div class="slide"> <img src="./images/img2.png"></div>
+        <div class="slide"> <img src="./images/img3.png"></div>
+        <div class="slide"> <img src="./images/img4.png"></div>
+        <div class="slide"> <img src="./images/img5.png"></div>
+        <div class="slide"> <img src="./images/img6.png"></div>
+        <div class="slide"> <img src="./images/img7.png"></div>
+        <div class="slide"> <img src="./images/img8.png"></div>
+        <div class="slide"> <img src="./images/img9.png"></div>
+        <div class="slide"> <img src="./images/img10.png"></div>
+    </div>
+    <section class="introhome">
+        <h1 class="elements">TRUSTED BY </h1>
+        <div class="trustedby">
+            <img src="images/icons8-adobe-50.png" />
+            <img src="images/icons8-amazon-50.png" />
+            <img src="images/icons8-disney-48.png" />
+            <img src="images/icons8-facebook-50.png" />
+            <img src="images/icons8-microsoft-50.png" />
+            <img src="images/icons8-shopify-50.png" />
+        </div>
+    </section>
+    <section class="two">
+        <div class="main">
+        <div class="connecting"> 
+            <div class="upper">Trusted by top brands & businesses</div>
+            <h2>Connecting brands and
+                <br> business builders with the
+                <br> world's top designers</h2>
+                <div class="lower"> The world’s leading brands use Dribbble to hire creative talent. Browse millions of top-rated </div> 
+                    <div class="lowersome">portfolios to find your perfect creative match.</div>
+        </div>
+        <div class="main2">
+        <div class="perfectmatch">
+            <div class="heading3">
+            <h3>Find your perfect
+                <br> creative match</h3> </div>
+            <div class="p1">As the world's largest and most far-reaching network of exceptional 
+                <br> creative professionals, we are fully equipped to handle your most critical
+                <br> projects with ease.</div>
+                <div class="designerflex">
+                    <div class="designer">Find a designer</div>
+                    <div class="hiring">Learn about hiring  </div>
+                </div>
+            
+        </div>
+        <div class="perfectimg"><img class="perfectimage" src="images/Screenshot 2023-10-01 174901.png"></div>
+        </div>
+        </div>
+    </section>
+
+    <section class="betterhome">
+        <div class="h33"><h3>A better way to hire
+            <br> designers</h3></div>
+        <div class="features">
+            <div class="f1"> <div class="f11"><h4 class="h4">The #1 job board for design talent</h4> </div>
+            <div class="ex1">Get your job listings in front of millions of top-rated
+                <br> designers looking for their next role with an average
+                <br> of 1.1K targeted clicks per month.</div> </div>
+            <div class="f2"><div class="f22"> <h4 class="h4">Seamless designer search filters</h4> </div>
+            <div class="ex2">No more sifting through piles of resumes. Our 
+                <br> advanced search & filtering options make it easy to 
+                <br>find the right designer in just a few clicks.</div> </div>
+            <div class="f3"> <div class="f33"><h4 class="h4">Top-quality candidates </h4> </div>
+            <div class="ex3">Your brand deserves only the best. Engage with 
+                <br>leading designers and save your favorite 
+                <br>candidates for future projects – all in one place.</div> </div>
+        </div>
+        </div>
+        <div class="tweetflex">
+        <div class="tweet">
+            <img class="tweetimg" src="images/img11.png"> </div>
+            <div>
+                <img class="redlogo" src="images/img12.png">
+            </div>
+        </div> 
+    </section>
+
+
+
+<section class="whyhome"> 
+    <div class="whyhomeupper">
+    <div class="heading2">
+        <h2>Why brands choose Dribbble
+        <br> to hire design talent</h2></div> </div>
+
+        <div class="featurestwo">
+     <div class="features2">   
+    <div class="f2one">
+        <img src="images/icon1.png">
+        <div><div><h3>World-class talent</h3></div></div>
+        <div>From graphic design to UX/UI, our community is home to 
+            <br>the world’s leading designers and creative agencies.
+        </div>
+    </div>
+
+    <div class="f2two" >
+        <img src="images/icon2.png">
+        <div class=""><div><h3>$0 placement fees</h3></div></div>
+        <div>We make the hiring process as seamless and cost-effective
+            <br> as possible, so you can focus on building your business.</div>
+    </div>
+    <div class="f2three">
+        <img src="images/icon3.png">
+        <div><div><h3>Global reach</h3></div></div>
+        <div>With a network of designers spanning over 170 countries, we
+            <br> make it easy to find world-class talent, wherever you are in
+            <br> the world.</div>
+    </div>
+    </div>
+    <div class="brandpics">
+        <img src="images/icon4.png">
+    </div>
+
+    </div>
+ 
+</section>
+
+
+<section class="work">
+    <div class="workhead"><h2>Plus, top quality work</h2> </div>
+    <div class="collage">
+        <img src="images/collage.png">
+    </div>
+
+</section>
+
+<section class="callouts">
+    <div class="callout">
+        <div class="color1">Looking for work?</div>
+        <div> <h2>Find your next 
+            <br> opportunity </h2>
+        </div>
+        <div>Browse new design jobs or boost your portfolio to
+            <br> get discovered.</div>
+        <div class="workflex"> 
+            <div class="workbutton">Find work</div>
+            <div class="discoverbutton"> Get discovered</div>
+        </div>
+    </div>
+    <div class="callout">
+        <div class="color2"> Here for inspiration?</div>
+        <div> <h2>Discover trending 
+            <br>designs </h2>
+        </div>
+        <div>Browse and save your favorite design projects for 
+            <br> endless inspiration.</div>
+        <div class="workflex">
+            <div class="profilebutton">Create my profile</div>
+            <div class="designbutton"> Browese designs</div>
+        </div>
+    </div>
+    
+</section>
+
+<section class="yellowbox">
+    <div><h2>Start hiring today</h2></div>
+    <div>Browse portfolios and engage with top creative talent today</div>
+    <div class="yellowflex">
+        <div class="profilebutton">Get started now</div>
+        <div class="designbutton">Learn about hiring</div>
+    </div>
+    <div class="yellowtext">
+        <div>Are you a designer?</div>
+        <div class="underline">Join Dribbble</div>
+    </div>
+</section>
+
+<section class="footer">
+    <div class="footers">
+    <div class="upperfooter">
+        <div><img class="logo2" src="images/Dribbble-Logo-New.png"></div>
+        <div class="middleflex">
+            <div>For designers</div>
+            <div>Hire talent</div>
+            <div>Inspiration</div>
+            <div>Advertising</div>
+            <div>Blog</div>
+            <div>About</div>
+            <div>Careers</div>
+            <div>Support</div>
+        </div>
+        <div class="smallflex">
+            <img class= small src="images/icons8-instagram-50.png">
+            <img class= small src="images/icons8-facebook-50.png">
+            <img class= small src="images/icons8-twitter-50.png">
+            <img class= small src="images/icons8-pinterest-50.png">
+        </div>
+    </div>
+    <div class="lowerfooter">
+        <div class="leftflex">
+            <div>2023 Dribbble</div>
+            <div>Terms</div>
+            <div>Privacy</div>
+            <div>Cookies</div>
+        </div>
+        <div class="rightflex">
+            <div>Jobs</div>
+            <div>designers</div>
+            <div>Freelancers</div>
+            <div>Tags</div>
+            <div>Places</div>
+            <div>Resources</div>
+             
+        </div>
+    </div>
+    </div>
+
+</section>
+</body>
+
+</html>
